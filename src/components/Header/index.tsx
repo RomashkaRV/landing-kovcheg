@@ -1,11 +1,12 @@
-import style from "./index.module.scss";
+import Link from "next/link";
 import Image from "next/image";
 
 import logoI from "/public/icons/logo.svg";
-import telegramI from "/public/icons/telegram.svg";
-import whatsappI from "/public/icons/whatsapp.svg";
 import phoneI from "/public/icons/phone.svg";
-import Link from "next/link";
+import whatsappI from "/public/icons/whatsapp.svg";
+import telegramI from "/public/icons/telegram.svg";
+
+import style from "./index.module.scss";
 
 export default function Header() {
 

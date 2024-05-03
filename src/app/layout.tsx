@@ -2,9 +2,11 @@ import React, { ReactNode } from "react";
 
 import { Golos_Text } from "next/font/google";
 
-import "src/style/index.scss";
 import Header from "src/components/Header";
-import Footer from "../components/Footer";
+import Footer from "src/components/Footer";
+
+import "src/style/index.scss";
+
 
 const golos = Golos_Text({
   subsets: ["latin", "cyrillic"],
@@ -21,9 +23,7 @@ export default function RootLayout({
       <head />
       <body>
         <Header />
-        <div className="container" >
-          {children}
-        </div>
+        {children}
         <Footer />
         <script src="//cdn.jsdelivr.net/npm/eruda"></script>
         <script>eruda.init();</script>
