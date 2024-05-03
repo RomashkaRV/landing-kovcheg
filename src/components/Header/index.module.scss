@@ -1,0 +1,125 @@
+.header {
+  max-width: 1400px;
+  height: 76px;
+
+  margin: 12px auto 0;
+  padding: 12px;
+
+  position: fixed;
+  right: 0;
+  left: 0;
+
+  justify-content: center;
+  display: flex;
+  align-items: center;
+
+  border-radius: 20px;
+  border: 1px solid rgba(140, 148, 168, 0.32);
+
+
+  background-color: rgba(40, 45, 60, 0.08);
+  backdrop-filter: blur(12px);
+
+  .logo {
+    width: fit-content;
+
+    position: absolute;
+    left: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &__img {
+      width: 52px;
+      height: 52px;
+
+      padding: 10px;
+
+      border: 1px solid rgba(140, 148, 168, 0.32);
+      border-radius: 16px;
+    }
+
+    &__title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #fff;
+    }
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+
+    &__item {
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+
+      color: #fff;
+
+      &::after {
+        width: 0;
+        height: 1px;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: block;
+
+        content: "";
+
+        transition: 0.3s;
+
+        transform: translateX(-50%);
+
+        background: #fff;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+
+  .actions {
+    width: fit-content;
+    position: absolute;
+
+    right: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &__block {
+      padding: 14px;
+
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      font-size: 14px;
+      font-weight: 500;
+
+      cursor: pointer;
+
+      transition: all 0.3s ease;
+
+      border: 1px solid rgba(140, 148, 168, 0.32);
+      border-radius: 16px;
+
+      color: #fff;
+
+      & img {
+        transition: all 0.3s ease;
+      }
+
+      &:hover {
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+}

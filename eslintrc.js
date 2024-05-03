@@ -95,10 +95,10 @@ module.exports = {
             "constants",
             "types"
           ].reduce(
-              (acc, name) => acc.concat(
-                  generatePathGroup(name)
-              ),
-              []
+            (acc, name) => acc.concat(
+              generatePathGroup(name)
+            ),
+            []
           ),
           "parent",
           "sibling",
