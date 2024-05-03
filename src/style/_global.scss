@@ -1,13 +1,12 @@
 @import "src/style/adaptive";
 
 .container {
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
 
   margin: 0 auto;
 
   flex: 1 0;
-
-  background-color: rgba(255, 0, 0, 0.2);
 }
 
 .number {

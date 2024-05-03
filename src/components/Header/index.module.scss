@@ -9,13 +9,14 @@
   right: 0;
   left: 0;
 
-  justify-content: center;
   display: flex;
   align-items: center;
+  justify-content: center;
 
-  border-radius: 20px;
   border: 1px solid rgba(140, 148, 168, 0.32);
+  border-radius: 20px;
 
+  z-index: 100;
 
   background-color: rgba(40, 45, 60, 0.08);
   backdrop-filter: blur(12px);
