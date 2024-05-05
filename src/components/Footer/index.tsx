@@ -26,7 +26,7 @@ export default function Footer() {
   ];
 
   return (
-    <header className={style.footer}>
+    <footer className={style.footer}>
       <Link
         className={style.logo}
         href="/"
@@ -61,6 +61,6 @@ export default function Footer() {
           <p>+7 (968) 551-62-86</p>
         </Link>
       </div>
-    </header>
+    </footer>
   );
 }

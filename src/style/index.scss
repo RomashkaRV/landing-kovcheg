@@ -16,6 +16,18 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+
+    background-color: #282d3c;
+  }
 }
 
 a {

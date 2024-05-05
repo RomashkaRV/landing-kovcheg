@@ -4,6 +4,7 @@ import { Golos_Text } from "next/font/google";
 
 import Header from "src/components/Header";
 import Footer from "src/components/Footer";
+import Feedback from "../components/Feedback";
 
 import "src/style/index.scss";
 
@@ -23,9 +24,8 @@ export default function RootLayout({
       <head />
       <body>
         <Header />
-        <div className="wrapper">
-          {children}
-        </div>
+        {children}
+        <Feedback />
         <Footer />
         <script src="//cdn.jsdelivr.net/npm/eruda"></script>
         <script>eruda.init();</script>
