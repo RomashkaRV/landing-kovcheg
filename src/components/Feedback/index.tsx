@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { enqueueSnackbar } from "notistack";
 
 import photo from "public/photo.png";
 import arrow from "./img/arrow.svg";
@@ -7,6 +8,14 @@ import style from "./index.module.scss";
 
 
 export default function Feedback() {
+
+  const sendFeedback = () => {
+    enqueueSnackbar("Заявка отправлена", {
+      variant: "success",
+      anchorOrigin: { horizontal: "right", vertical: "bottom" }
+    });
+  };
+
   return (
     <div className="container">
       <section className={style.feedback}>
@@ -38,7 +47,7 @@ export default function Feedback() {
           </div>
         </div>
         <div className={style.feedback__content}>
-          <form className={style.actions}>
+          <div className={style.actions}>
             <div className={style.field}>
               <p className={style.field__title}>
                 Имя <span>*</span>
@@ -63,11 +72,14 @@ export default function Feedback() {
                 placeholder="Введите почту"
               />
             </div>
-            <button>
+            <button
+              className={style.button}
+              onClick={sendFeedback}
+            >
               Оставить заявку
               <Image src={arrow} alt="arrow" />
             </button>
-          </form>
+          </div>
           <p className={style.personal}>
             Cогласен на обработку персональных данных, а также с политикой конфиденциальности
           </p>

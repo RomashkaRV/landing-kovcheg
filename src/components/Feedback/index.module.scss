@@ -2,10 +2,11 @@
   width: 100%;
   max-width: 1440px;
 
-  margin: auto auto 0;
   padding: 32px 40px;
 
   display: flex;
+  flex: 0 0 auto;
+
   flex-direction: column;
   gap: 32px;
   border-radius: 16px;
@@ -140,7 +141,7 @@
         }
       }
 
-      & button {
+      .button {
         width: 100%;
         max-width: fit-content;
         height: fit-content;
