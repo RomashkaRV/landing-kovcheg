@@ -6,8 +6,8 @@ import { SnackbarProvider } from "notistack";
 import { Golos_Text } from "next/font/google";
 
 import Header from "src/components/Header";
-import Footer from "src/components/Footer";
 import Feedback from "src/components/Feedback";
+import Footer from "src/components/Footer";
 
 import "src/style/index.scss";
 

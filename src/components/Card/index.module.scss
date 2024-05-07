@@ -1,0 +1,103 @@
+.card {
+  cursor: pointer;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  background-color: #fff;
+
+  &:hover {
+    .card__img {
+      & img {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  &__img {
+    height: 400px;
+
+    overflow: hidden;
+
+    & img {
+      width: 100%;
+      height: 100%;
+
+      border-radius: 16px 16px 0 0;
+
+      transition: all .3s ease;
+
+      object-fit: cover;
+    }
+  }
+
+  &__info {
+    padding: 16px 24px;
+
+    display: flex;
+    justify-content: space-between;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .name,
+    .price {
+      max-width: 165px;
+
+      font-size: 16px;
+      font-weight: 600;
+
+      text-overflow: ellipsis;
+      white-space: nowrap;
+
+      overflow: hidden;
+
+      color: #282d3c;
+    }
+
+    .size {
+      font-size: 12px;
+      font-weight: 500;
+
+      color: #8c94a8;
+    }
+
+    .link {
+      margin-left: auto;
+
+      position: relative;
+
+      font-size: 12px;
+      font-weight: 600;
+
+      color: #38b524;
+
+      &::after {
+        width: 0;
+        height: 1px;
+
+        position: absolute;
+        left: 50%;
+        bottom: -2px;
+
+        display: block;
+
+        content: "";
+
+        transform: translateX(-50%);
+
+        transition: 0.3s;
+
+        background: #38b524;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}

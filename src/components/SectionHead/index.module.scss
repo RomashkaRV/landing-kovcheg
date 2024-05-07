@@ -1,0 +1,33 @@
+.sectionHead {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #282d3c;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      font-weight: 400;
+      color: #8c94a8;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    font-weight: 600;
+    font-size: 14px;
+    color: #38b524;
+  }
+}

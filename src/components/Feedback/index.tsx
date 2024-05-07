@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { enqueueSnackbar } from "notistack";
 
-import photo from "public/photo.png";
+import photo from "public/photo_remove.png";
 import arrow from "./img/arrow.svg";
 
 import style from "./index.module.scss";

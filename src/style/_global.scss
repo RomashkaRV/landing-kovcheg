@@ -1,17 +1,18 @@
 @import "src/style/adaptive";
 
-.wrapper {
-  flex: 1;
-
-  height: 100%;
-}
+//.wrapper {
+//  flex: 1;
+//
+//  height: 100%;
+//}
 
 .container {
   width: 100%;
   max-width: 1440px;
 
-  margin: 0 auto;
+  flex: 1 1;
 
+  margin: 0 auto;
   padding: 0 64px;
 }
 

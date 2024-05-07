@@ -6,20 +6,23 @@
   padding: 12px;
 
   position: fixed;
-  right: 0;
   left: 0;
-
-  z-index: 1000;
+  right: 0;
 
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   border: 1px solid rgba(140, 148, 168, 0.32);
+
   border-radius: 20px;
 
-  background-color: rgba(40, 45, 60, 0.08);
+  z-index: 1000;
+
   backdrop-filter: blur(12px);
+
+  background-color: rgba(40, 45, 60, 0.08);
 
   .logo {
     width: fit-content;
@@ -44,6 +47,7 @@
     &__title {
       font-size: 14px;
       font-weight: 700;
+
       color: #fff;
     }
   }
@@ -55,6 +59,7 @@
 
     &__item {
       position: relative;
+
       font-size: 14px;
       font-weight: 500;
 
@@ -65,20 +70,21 @@
         height: 1px;
 
         position: absolute;
-        bottom: 0;
         left: 50%;
+        bottom: 0;
+
         display: block;
 
         content: "";
 
-        transition: 0.3s;
-
         transform: translateX(-50%);
+
+        transition: 0.3s;
 
         background: #fff;
       }
 
-      &:hover:after {
+      &:hover::after {
         width: 100%;
       }
     }
@@ -86,6 +92,7 @@
 
   .actions {
     width: fit-content;
+
     position: absolute;
 
     right: 12px;
@@ -106,10 +113,10 @@
 
       cursor: pointer;
 
-      transition: all 0.3s ease;
-
       border: 1px solid rgba(140, 148, 168, 0.32);
       border-radius: 16px;
+
+      transition: all 0.3s ease;
 
       color: #fff;
 
@@ -119,6 +126,7 @@
 
       &:hover {
         border: 1px solid rgba(255, 255, 255, 0.2);
+
         background-color: rgba(255, 255, 255, 0.2);
       }
     }
