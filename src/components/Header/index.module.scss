@@ -1,3 +1,5 @@
+@import "src/style/typography";
+
 .header {
   max-width: 1400px;
   height: 76px;
@@ -10,12 +12,10 @@
   right: 0;
 
   display: flex;
-
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   border: 1px solid rgba(140, 148, 168, 0.32);
-
   border-radius: 20px;
 
   z-index: 1000;
@@ -26,9 +26,6 @@
 
   .logo {
     width: fit-content;
-
-    position: absolute;
-    left: 12px;
 
     display: flex;
     align-items: center;
@@ -45,8 +42,7 @@
     }
 
     &__title {
-      font-size: 14px;
-      font-weight: 700;
+      @include b4;
 
       color: #fff;
     }
@@ -60,8 +56,7 @@
     &__item {
       position: relative;
 
-      font-size: 14px;
-      font-weight: 500;
+      @include b6;
 
       color: #fff;
 
@@ -93,10 +88,6 @@
   .actions {
     width: fit-content;
 
-    position: absolute;
-
-    right: 12px;
-
     display: flex;
     align-items: center;
     gap: 8px;
@@ -108,8 +99,7 @@
       align-items: center;
       gap: 8px;
 
-      font-size: 14px;
-      font-weight: 500;
+      @include b6;
 
       cursor: pointer;
 
