@@ -4,7 +4,7 @@
 
   flex: 0 0 auto;
 
-  margin: 0 auto 0;
+  margin: 0 auto;
   padding: 64px;
 
   position: relative;
@@ -47,6 +47,7 @@
 
     &__item {
       position: relative;
+
       font-size: 14px;
       font-weight: 500;
 
@@ -57,21 +58,21 @@
         height: 1px;
 
         position: absolute;
-        bottom: 0;
         left: 50%;
+        bottom: 0;
 
         display: block;
 
         content: "";
 
-        transition: 0.3s;
-
         transform: translateX(-50%);
+
+        transition: 0.3s;
 
         background: #282D3C;
       }
 
-      &:hover:after {
+      &:hover::after {
         width: 100%;
       }
     }
@@ -96,10 +97,10 @@
 
       cursor: pointer;
 
-      transition: all 0.3s ease;
-
       border: 1px solid rgba(140, 148, 168, 0.32);
       border-radius: 16px;
+
+      transition: all 0.3s ease;
 
       color: #282D3C;
 

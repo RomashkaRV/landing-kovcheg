@@ -5,9 +5,10 @@ import { SnackbarProvider } from "notistack";
 
 import { Golos_Text } from "next/font/google";
 
+import Head from "./head";
+import Footer from "src/components/Footer";
 import Header from "src/components/Header";
 import Feedback from "src/components/Feedback";
-import Footer from "src/components/Footer";
 
 import "src/style/index.scss";
 
@@ -24,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={golos.className}>
-      <head />
+      <Head />
       <body>
         <SnackbarProvider>
           <Header />

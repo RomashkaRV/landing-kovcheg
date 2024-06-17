@@ -1,274 +1,274 @@
 @import "adaptive";
 
 @mixin h1 {
+  font-size: 40px;
   font-style: normal;
   font-weight: 800;
-  font-size: 40px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 32px;
     font-style: normal;
     font-weight: 800;
-    font-size: 32px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 28px;
     font-style: normal;
     font-weight: 800;
-    font-size: 28px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
     line-height: 120%;
   }
 }
 
 @mixin h2 {
+  font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 28px;
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
     line-height: 120%;
   }
 }
 
 @mixin h3 {
+  font-size: 28px;
   font-style: normal;
   font-weight: 800;
-  font-size: 28px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 24px;
     font-style: normal;
     font-weight: 800;
-    font-size: 24px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 20px;
     font-style: normal;
     font-weight: 800;
-    font-size: 20px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 18px;
     font-style: normal;
     font-weight: 800;
-    font-size: 18px;
     line-height: 120%;
   }
 }
 
 @mixin h4 {
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  font-size: 24px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
     line-height: 120%;
   }
 }
 
 @mixin h5 {
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
     line-height: 120%;
   }
 }
 
 @mixin h6 {
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
     line-height: 120%;
   }
 }
 
 @mixin b1 {
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 150%;
 
   @include adaptive-md {
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
     line-height: 150%;
   }
 
   @include adaptive-sm {
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
     line-height: 150%;
   }
 
   @include adaptive-xs {
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
     line-height: 150%;
   }
 }
 
 @mixin b2 {
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
     line-height: 120%;
   }
 }
 
 @mixin b3 {
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 150%;
 
   @include adaptive-md {
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 150%;
   }
 
   @include adaptive-sm {
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
     line-height: 150%;
   }
 
   @include adaptive-xs {
+    font-size: 10px;
     font-style: normal;
     font-weight: 500;
-    font-size: 10px;
     line-height: 150%;
   }
 }
 
 @mixin cb1 {
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 14px;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
     line-height: 120%;
   }
 
@@ -281,144 +281,144 @@
 }
 
 @mixin btn1 {
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    font-size: 16px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    font-size: 12px;
     line-height: 120%;
   }
 }
 
 @mixin inp1 {
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
     line-height: 120%;
   }
 }
 
 @mixin num1 {
   font-family: Rubik, sans-serif;
+  font-size: 18px;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
-    font-size: 12px;
     line-height: 120%;
   }
 }
 
 @mixin num2 {
   font-family: Rubik, sans-serif;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
-    font-size: 14px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 10px;
     font-style: normal;
     font-weight: 600;
-    font-size: 10px;
     line-height: 120%;
   }
 }
 
 @mixin num3 {
   font-family: Rubik, sans-serif;
+  font-size: 13px;
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
   line-height: 120%;
 
   @include adaptive-md {
+    font-size: 11px;
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
     line-height: 120%;
   }
 
   @include adaptive-sm {
+    font-size: 11px;
     font-style: normal;
     font-weight: 600;
-    font-size: 11px;
     line-height: 120%;
   }
 
   @include adaptive-xs {
+    font-size: 8px;
     font-style: normal;
     font-weight: 600;
-    font-size: 8px;
     line-height: 120%;
   }
 }
