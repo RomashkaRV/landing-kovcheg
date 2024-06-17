@@ -1,3 +1,5 @@
+@import "src/style/typography";
+
 .head {
   width: 100%;
   height: 642px;
@@ -39,78 +41,104 @@
     flex-flow: column wrap;
 
     display: flex;
-    gap: 220px;
+    gap: 160px;
 
     z-index: 100;
 
-    .title {
+    .information {
       display: flex;
-      align-items: flex-end;
+      flex-direction: column;
+      gap: 32px;
 
-      & p {
-        width: 520px;
+      &__title {
+        padding-top: 10px;
 
-        display: -webkit-box;
+        display: flex;
+        align-items: flex-end;
 
-        font-size: 72px;
-        font-weight: 600;
-        line-height: normal;
+        gap: 20px;
+
+        & p {
+          @include h1;
+
+          color: #fff;
+        }
+
+        .arrow {
+          width: fit-content;
+
+          padding: 12px;
+
+          cursor: pointer;
+
+          border: 1px solid rgba(140, 148, 168, 0.6);
+
+          border-radius: 100px;
+
+          transition: all .3s ease;
+
+          &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            background-color: rgba(255, 255, 255, 0.2);
+          }
+        }
+      }
+
+      &__subTitle {
+        @include b1;
+
+        color: #A6AFC5FF;
+      }
+
+      & a {
+        width: fit-content;
+
+        padding: 16px 24px;
+
+        display: flex;
+        justify-content: center;
+
+        border-radius: 40px;
 
         color: #fff;
 
-        -webkit-line-clamp: 2;
-      }
+        background-color: #38B524FF;
 
-      .arrow {
-        width: fit-content;
-
-        margin-bottom: 13px;
-        padding: 12px;
-
-        cursor: pointer;
-
-        border: 1px solid rgba(140, 148, 168, 0.6);
-        border-radius: 100px;
-
-        transition: all .3s ease;
-
-        &:hover {
-          border: 1px solid rgba(255, 255, 255, 0.2);
-
-          background-color: rgba(255, 255, 255, 0.2);
-        }
+        @include b5;
       }
     }
 
-    .tagList {
-      width: fit-content;
+    .tags {
+      &__list {
+        width: fit-content;
 
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
 
-      &__tag {
-        padding: 8px 12px;
+        .tag {
+          padding: 8px 12px;
 
-        cursor: pointer;
+          cursor: pointer;
 
-        border: 1px solid rgba(140, 148, 168, 0.32);
-        border-radius: 16px;
+          border: 1px solid rgba(140, 148, 168, 0.32);
 
-        transition: all .3s ease;
+          border-radius: 16px;
 
-        & p {
-          font-size: 12px;
-          font-weight: 500;
-          line-height: normal;
+          transition: all .3s ease;
 
-          color: #ccd4e8;
-        }
+          & p {
+            @include b9;
 
-        &:hover {
-          border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #CCD4E8FF;
+          }
 
-          background-color: rgba(255, 255, 255, 0.2);
+          &:hover {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+
+            background-color: rgba(255, 255, 255, 0.2);
+          }
         }
       }
     }

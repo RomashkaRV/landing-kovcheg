@@ -7,6 +7,7 @@ import headI from "./img/bgi-main.jpeg";
 import arrowI from "./img/arrow.svg";
 
 import style from "./index.module.scss";
+import Link from "next/link";
 
 
 export default function Head() {
@@ -31,21 +32,31 @@ export default function Head() {
         style.head__content,
         "container"
       )}>
-        <div className={style.title}>
-          <p>Строй ковчег вместе с нами</p>
-          <div className={style.arrow}>
-            <Image src={arrowI} alt="arrow" />
-          </div>
-        </div>
-        <div className={style.tagList}>
-          {TagLinks.map((item, index) => (
-            <div
-              className={style.tagList__tag}
-              key={index}
-            >
-              <p>{item}</p>
+        <div className={style.information}>
+          <div className={style.information__title}>
+            <p>Строй ковчег вместе с нами</p>
+            <div className={style.arrow}>
+              <Image src={arrowI} alt="arrow" />
             </div>
-          ))}
+          </div>
+          <p className={style.information__subTitle}>
+            Строим дома по индивидуальным и авторским проектам в Москве и МО
+          </p>
+          <Link href="/" passHref>
+            Рассчитать стоимость
+          </Link>
+        </div>
+        <div className={style.tags}>
+          <div className={style.tags__list}>
+            {TagLinks.map((item, index) => (
+              <div
+                className={style.tag}
+                key={index}
+              >
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
