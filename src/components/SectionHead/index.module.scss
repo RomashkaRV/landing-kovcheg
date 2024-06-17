@@ -1,33 +1,41 @@
+@import "src/style/typography";
+
 .sectionHead {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
 
-  &__info {
+  .info {
     display: flex;
     flex-direction: column;
     gap: 12px;
 
-    .title {
-      font-size: 32px;
-      font-weight: 600;
+    &__title {
+      @include h2;
+
       color: #282d3c;
     }
 
-    .subtitle {
-      font-size: 16px;
-      font-weight: 400;
+    &__subtitle {
+      @include b1;
+
       color: #8c94a8;
     }
   }
 
-  &__link {
+  .link {
     display: flex;
     align-items: center;
     gap: 8px;
 
-    font-weight: 600;
-    font-size: 14px;
+    @include b5;
+
+    transition: all .3s ease;
+
     color: #38b524;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 }

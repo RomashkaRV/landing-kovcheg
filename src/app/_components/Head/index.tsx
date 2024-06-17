@@ -1,13 +1,13 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import classNames from "src/functions/classNames";
 
-import headI from "./img/bgi-main.jpeg";
 import arrowI from "./img/arrow.svg";
+import headI from "./img/bgi-main.jpeg";
 
 import style from "./index.module.scss";
-import Link from "next/link";
 
 
 export default function Head() {

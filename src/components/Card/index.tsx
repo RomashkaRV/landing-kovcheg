@@ -25,7 +25,23 @@ export default function Card(props: IProps) {
   } = props;
 
   return (
-    <div className={style.card}>
+    <Link
+      className={style.card}
+      href={data.id}
+      passHref
+    >
+      <div className={style.card__status}>
+        {data.isPopular ? (
+          <div className={style.popular}>
+            <p>🔥 Популярное</p>
+          </div>
+        ) : null}
+        {data.isFinishing ? (
+          <div className={style.finishing}>
+            <p>С отделкой</p>
+          </div>
+        ) : null}
+      </div>
       <div className={style.card__img}>
         <Image src={CardImage} alt="image_card" />
       </div>
@@ -42,14 +58,11 @@ export default function Card(props: IProps) {
           <p className={style.price}>
            от {data.price} млн ₽
           </p>
-          <Link
-            className={style.link}
-            href={data.id}
-          >
+          <div className={style.link}>
             Подробнее
-          </Link>
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }

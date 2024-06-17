@@ -15,16 +15,16 @@ interface IProps {
 export default function SectionHead(props: IProps) {
   return (
     <div className={style.sectionHead}>
-      <div className={style.sectionHead__info}>
-        <p className={style.title}>
+      <div className={style.info}>
+        <p className={style.info__title}>
           {props.title}
         </p>
-        <p className={style.subtitle}>
+        <p className={style.info__subtitle}>
           {props.subtitle}
         </p>
       </div>
       <Link
-        className={style.sectionHead__link}
+        className={style.link}
         href={props.url}
       >
         {props.link}
