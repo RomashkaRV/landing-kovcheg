@@ -1,424 +1,134 @@
 @import "adaptive";
 
 @mixin h1 {
-  font-size: 40px;
+  font-size: 64px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
+  font-weight: 600;
+  line-height: 77px;
 
   @include adaptive-md {
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%;
+    //font-size: 32px;
+    //font-style: normal;
+    //font-weight: 800;
+    //line-height: 120%;
   }
 
   @include adaptive-sm {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%;
+    //font-size: 28px;
+    //font-style: normal;
+    //font-weight: 800;
+    //line-height: 120%;
   }
 
   @include adaptive-xs {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%;
+    //font-size: 24px;
+    //font-style: normal;
+    //font-weight: 800;
+    //line-height: 120%;
   }
 }
 
 @mixin h2 {
   font-size: 32px;
   font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
+  font-weight: 600;
+  line-height: 38px;
 }
 
 @mixin h3 {
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 120%;
-  }
-}
-
-@mixin h4 {
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-}
-
-@mixin h5 {
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
+  line-height: 24px;
 }
 
-@mixin h6 {
-  font-size: 18px;
+@mixin h4 {
+  font-size: 20px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+  line-height: 24px;
 }
 
 @mixin b1 {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
-
-  @include adaptive-md {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-
-  @include adaptive-sm {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
-
-  @include adaptive-xs {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 150%;
-  }
+  font-weight: 400;
+  line-height: 19px;
 }
 
 @mixin b2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-  }
+  line-height: 19px;
 }
 
 @mixin b3 {
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 150%;
-
-  @include adaptive-md {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-
-  @include adaptive-sm {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
-
-  @include adaptive-xs {
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 150%;
-  }
+  font-weight: 600;
+  line-height: 19px;
 }
 
-@mixin cb1 {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  //@include adaptive-xs {
-  //  font-style: normal;
-  //  font-weight: 600;
-  //  font-size: 12px;
-  //  line-height: 120%;
-  //}
-}
-
-@mixin btn1 {
-  font-size: 18px;
+@mixin b4 {
+  font-size: 14px;
   font-style: normal;
   font-weight: 700;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-  }
+  line-height: 17px;
 }
 
-@mixin inp1 {
-  font-size: 18px;
+@mixin b5 {
+  font-size: 14px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+  line-height: 17px;
 }
 
-@mixin num1 {
-  font-family: Rubik, sans-serif;
-  font-size: 18px;
+@mixin b6 {
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+  font-weight: 500;
+  line-height: 17px;
 }
 
-@mixin num2 {
-  font-family: Rubik, sans-serif;
-  font-size: 16px;
+@mixin b7 {
+  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
-  line-height: 120%;
-
-  @include adaptive-md {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-sm {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
-
-  @include adaptive-xs {
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+  font-weight: 400;
+  line-height: 17px;
 }
 
-@mixin num3 {
-  font-family: Rubik, sans-serif;
-  font-size: 13px;
+@mixin b8 {
+  font-size: 12px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%;
+  line-height: 14px;
+}
 
-  @include adaptive-md {
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+@mixin b9 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 14px;
+}
 
-  @include adaptive-sm {
-    font-size: 11px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+@mixin b10 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
 
-  @include adaptive-xs {
-    font-size: 8px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 120%;
-  }
+@mixin b11 {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+@mixin b12 {
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
 }

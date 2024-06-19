@@ -1,14 +1,15 @@
+import React from "react";
 import Image from "next/image";
 
 import SectionHead from "src/components/SectionHead";
 
-import servicesI1 from "./_assets/services_1_remove.jpeg";
-import servicesI2 from "./_assets/services_2_remove.jpeg";
-
-import houseI from "./_assets/house.svg";
-import landscaping from "./_assets/landscaping.svg";
+import arrowI from "public/icons/arrow.svg";
+import servicesI1 from "public/images/services_1_remove.jpeg";
+import servicesI2 from "public/images/services_2_remove.jpeg";
 
 import style from "./index.module.scss";
+import Link from "next/link";
+
 
 export default function Services() {
 
@@ -16,15 +17,15 @@ export default function Services() {
     {
       link: "/",
       price: "1000",
-      ico: landscaping,
+      ico: "🌿",
       name: "Озеленение",
       background: servicesI1
     },
     {
       link: "/",
-      ico: houseI,
+      ico: "🏠",
       price: "1000",
-      name: "Озеленение",
+      name: "Благоустройство",
       background: servicesI2
     }
   ];
@@ -39,29 +40,34 @@ export default function Services() {
       />
       <div className={style.services__list}>
         {services.map((item, index) => (
-          <div className={style.item} key={index}>
+          <Link
+            className={style.item}
+            href={item.link}
+            key={index}
+            passHref
+          >
             <Image
               className={style.item__background}
               src={item.background}
               alt="img services"
             />
             <div className={style.item__info}>
-              <div className={style.info__ico}>
-                <Image
-                  src={item.ico}
-                  alt="ico"
-                />
+              <div className={style.ico}>
+                <p>{item.ico}</p>
               </div>
-              <div className={style.info__text}>
-                <p className={style.title}>
+              <div className={style.data}>
+                <p className={style.data__title}>
                   {item.name}
                 </p>
-                <p className={style.price}>
+                <p className={style.data__price}>
                   от {item.price} ₽/ м<sup>2</sup>
                 </p>
               </div>
+              <div className={style.button}>
+                <Image src={arrowI} alt="arrow" />
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
