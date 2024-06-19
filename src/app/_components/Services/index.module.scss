@@ -28,6 +28,8 @@
       display: flex;
       align-items: flex-end;
 
+      cursor: pointer;
+
       border-radius: 12px;
 
       overflow: hidden;
@@ -66,6 +68,12 @@
 
         background-color: rgba(40, 45, 60, 0.5);
 
+        &:hover {
+          .button {
+            background-color: #38B524FF;
+          }
+        }
+
         .ico {
           width: 55px;
           height: 55px;
@@ -98,6 +106,21 @@
             @include b6;
 
             color: #8c94a8;
+          }
+        }
+
+        .button {
+          margin-left: 12px;
+          padding: 12px;
+
+          border: 1px solid rgb(56, 181, 36);
+          border-radius: 100px;
+
+          transition: all .3s ease;
+
+          & img {
+            width: 32px;
+            height: 32px;
           }
         }
       }

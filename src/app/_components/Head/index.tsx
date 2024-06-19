@@ -4,8 +4,8 @@ import Image from "next/image";
 
 import classNames from "src/functions/classNames";
 
-import arrowI from "../../../../public/icons/arrow.svg";
-import headI from "../../../../public/images/bgi-main.jpeg";
+import arrowI from "public/icons/arrow.svg";
+import headI from "public/images/bgi-main.jpeg";
 
 import style from "./index.module.scss";
 

@@ -1,11 +1,14 @@
+import React from "react";
 import Image from "next/image";
 
 import SectionHead from "src/components/SectionHead";
 
+import arrowI from "public/icons/arrow.svg";
 import servicesI1 from "public/images/services_1_remove.jpeg";
 import servicesI2 from "public/images/services_2_remove.jpeg";
 
 import style from "./index.module.scss";
+import Link from "next/link";
 
 
 export default function Services() {
@@ -37,7 +40,12 @@ export default function Services() {
       />
       <div className={style.services__list}>
         {services.map((item, index) => (
-          <div className={style.item} key={index}>
+          <Link
+            className={style.item}
+            href={item.link}
+            key={index}
+            passHref
+          >
             <Image
               className={style.item__background}
               src={item.background}
@@ -55,11 +63,11 @@ export default function Services() {
                   от {item.price} ₽/ м<sup>2</sup>
                 </p>
               </div>
+              <div className={style.button}>
+                <Image src={arrowI} alt="arrow" />
+              </div>
             </div>
-            <div className={style.item__button}>
-
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
