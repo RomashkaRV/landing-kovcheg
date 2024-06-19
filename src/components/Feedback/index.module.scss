@@ -1,14 +1,17 @@
+@import "src/style/typography";
+
 .feedback {
   width: 100%;
   max-width: 1440px;
 
+  flex: 0 0 auto;
+
   padding: 32px 40px;
 
   display: flex;
-  flex: 0 0 auto;
-
   flex-direction: column;
   gap: 32px;
+
   border-radius: 16px;
 
   background-color: #282D3C;
@@ -23,27 +26,30 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+
       line-height: normal;
 
       &__title {
-        font-size: 32px;
-        font-weight: 600;
+        @include h2;
+
         color: #fff;
       }
 
       &__subtitle {
-        font-size: 16px;
-        font-weight: 400;
+        @include b1;
+
         color: #8c94a8;
       }
     }
 
     .manager {
       padding: 12px 24px 12px 12px;
+
       display: flex;
       align-items: center;
 
       gap: 16px;
+
       border: 1px solid #33394a;
       border-radius: 50px;
 
@@ -62,22 +68,22 @@
 
         &__info {
           .name {
-            font-size: 16px;
-            font-weight: 500;
+            @include b2;
+
             color: #fff;
           }
 
           .post {
-            font-size: 14px;
-            font-weight: 400;
+            @include b7;
+
             color: #8c94a8;
           }
         }
       }
 
       &__info {
-        font-size: 12px;
-        font-weight: 400;
+        @include b11;
+
         color: rgba(140, 148, 168, 0.6);
       }
     }
@@ -92,6 +98,7 @@
       width: 100%;
 
       padding: 16px;
+
       display: flex;
       align-items: flex-end;
 
@@ -109,13 +116,13 @@
         gap: 8px;
 
         &__title {
-          font-size: 12px;
-          font-weight: 500;
+          @include b9;
+
           color: #fff;
 
           & span {
-            font-size: 12px;
-            font-weight: 400;
+            @include b9;
+
             color: #e84522;
           }
         }
@@ -123,19 +130,20 @@
         & input {
           padding: 16px;
 
-          font-size: 14px;
-          font-weight: 500;
+          @include b6;
+
+          outline: none;
           border: none;
 
           border-radius: 12px;
 
-          outline: none;
           color: #8c94a8;
           background-color: #33394a;
 
           &::placeholder {
             font-size: 14px;
             font-weight: 500;
+
             color: #8c94a8;
           }
         }
@@ -152,8 +160,7 @@
         align-items: center;
         gap: 8px;
 
-        font-size: 14px;
-        font-weight: 600;
+        @include b5;
 
         white-space: nowrap;
 
@@ -184,8 +191,8 @@
     }
 
     .personal {
-      font-size: 10px;
-      font-weight: 400;
+      @include b12;
+
       color: rgba(140, 148, 168, 0.6);
     }
   }
