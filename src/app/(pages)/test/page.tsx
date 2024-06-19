@@ -1,6 +1,6 @@
 export default function Test() {
   return (
-    <div>
+    <div className="container">
       test
       test
       test
