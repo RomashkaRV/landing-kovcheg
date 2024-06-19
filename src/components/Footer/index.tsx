@@ -8,6 +8,7 @@ import telegramI from "/public/icons/telegram.svg";
 
 import style from "./index.module.scss";
 
+
 export default function Footer() {
 
   const Links = [

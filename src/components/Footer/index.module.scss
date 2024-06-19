@@ -1,3 +1,5 @@
+@import "src/style/typography";
+
 .footer {
   width: 100%;
   max-width: 1440px;
@@ -33,8 +35,7 @@
     }
 
     &__title {
-      font-size: 14px;
-      font-weight: 700;
+      @include b4;
 
       color: #282D3C;
     }
@@ -48,8 +49,7 @@
     &__item {
       position: relative;
 
-      font-size: 14px;
-      font-weight: 500;
+      @include b6;
 
       color: #282D3C;
 
@@ -92,8 +92,7 @@
       align-items: center;
       gap: 8px;
 
-      font-size: 14px;
-      font-weight: 500;
+      @include b6;
 
       cursor: pointer;
 
