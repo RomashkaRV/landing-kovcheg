@@ -65,6 +65,7 @@ export default function Header() {
             className={style.nav__item}
             key={index}
             href={item.url}
+            passHref
           >
             {item.title}
           </Link>

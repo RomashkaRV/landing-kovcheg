@@ -50,6 +50,7 @@ export default function Footer() {
               className={style.nav__item}
               key={index}
               href={item.url}
+              passHref
             >
               {item.title}
             </Link>

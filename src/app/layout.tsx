@@ -31,7 +31,6 @@ export default function RootLayout({
           <div className="wrapper">
             {children}
           </div>
-          {/*<Feedback />*/}
           <Footer />
           {/*<script src="//cdn.jsdelivr.net/npm/eruda"></script>*/}
           {/*<script>eruda.init();</script>*/}
