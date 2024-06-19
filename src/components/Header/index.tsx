@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 import logoI from "/public/icons/logo.svg";
 import phoneI from "/public/icons/phone.svg";
@@ -8,7 +9,27 @@ import telegramI from "/public/icons/telegram.svg";
 
 import style from "./index.module.scss";
 
+
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 200) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const Links = [
     {
@@ -26,7 +47,7 @@ export default function Header() {
   ];
 
   return (
-    <header className={style.header}>
+    <header className={`${style.header} ${isScrolled ? style.headerDark : ""}`}>
       <Link
         className={style.logo}
         href="/"

@@ -18,11 +18,17 @@
   border: 1px solid rgba(140, 148, 168, 0.32);
   border-radius: 20px;
 
+  transition: all .3s ease;
+
   z-index: 1000;
 
   backdrop-filter: blur(12px);
 
   background-color: rgba(40, 45, 60, 0.08);
+
+  &Dark {
+    background-color: rgba(40, 45, 60, 0.8);
+  }
 
   .logo {
     width: fit-content;
