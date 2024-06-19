@@ -1,13 +1,11 @@
-"use client";
-
 import React, { ReactNode } from "react";
-import { SnackbarProvider } from "notistack";
 
 import { Golos_Text } from "next/font/google";
 
 import Head from "./head";
 import Footer from "src/components/Footer";
 import Header from "src/components/Header";
+import ClientSnackbarProvider from "./_components/SnackbarProvider";
 
 import "src/style/index.scss";
 
@@ -26,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className={golos.className}>
       <Head />
       <body>
-        <SnackbarProvider>
+        <ClientSnackbarProvider>
           <Header />
           <div className="wrapper">
             {children}
@@ -34,7 +32,7 @@ export default function RootLayout({
           <Footer />
           {/*<script src="//cdn.jsdelivr.net/npm/eruda"></script>*/}
           {/*<script>eruda.init();</script>*/}
-        </SnackbarProvider>
+        </ClientSnackbarProvider>
       </body>
     </html>
   );

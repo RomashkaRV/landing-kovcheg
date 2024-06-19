@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import CardImage from "public/card_remove.jpeg";
+import CardImage from "public/images/card_remove.jpeg";
 
 import style from "./index.module.scss";
 
