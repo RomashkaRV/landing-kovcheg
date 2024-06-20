@@ -7,6 +7,7 @@ import Models from "./_components/Models";
 import Services from "./_components/Services";
 
 import style from "./page.module.scss";
+import BlockServices from "./_components/BlockServices";
 
 
 export default function MainPage() {
@@ -17,6 +18,7 @@ export default function MainPage() {
       <div className="container">
         <Models />
         <Services />
+        <BlockServices />
       </div>
     </div>
   );
